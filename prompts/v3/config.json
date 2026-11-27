@@ -1,0 +1,4 @@
+{
+  "id_mode": "alias",
+  "_doc": "Candidates are sent with short ids (c1, c2, ...) and without raw UUID fields; the backend maps ids back."
+}

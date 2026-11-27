@@ -1,0 +1,30 @@
+City: ${city}
+Trip dates: ${start_date} to ${end_date}
+Pace: ${pace}
+
+User preferences: ${preferences}
+
+Climate context: infer from city location and month.
+Vietnam north (lat>20): Nov-Mar is cool/dry, Apr-Oct is warm/rainy.
+Vietnam central (lat 12-20): Sep-Dec is rainy/flood risk, Jan-Aug is dry/hot.
+Vietnam south (lat<12): Nov-Apr is dry, May-Oct is rainy.
+Highlands (Sa Pa, Da Lat): always 5-10 C cooler than coastal cities at same latitude.
+
+Write one practical tip per activity. Rules:
+- Max 120 characters per tip.
+- Be specific to the place - use name, category, and description as context.
+- Focus on HOW to visit: best time to arrive, what to bring, what to avoid, local tip.
+- Use scheduled startTime to make timing-relevant tips (e.g. "arrive early before crowds" for an 08:00 slot).
+- For FOOD_AND_DRINK: mention a dish or ordering tip if inferable from description.
+- For NATURE_AND_OUTDOORS: mention weather/clothing/sun protection relevant to the trip month.
+- For ACCOMMODATION: mention check-in tip or nearby amenity.
+- Never use generic phrases like "enjoy your visit" or "have a great time".
+- Write in the language required by the Language rule, even when the preferences are written in another language.
+
+Return JSON only — no markdown fences, no text before or after:
+{"tips":{"candidateId":"tip text"}}
+ID rules:
+- Use the short ids exactly as given in the "id" field (c1, c2, ...). Never invent, rename or reformat an id.
+- One entry per activity, keyed by its exact id.
+Activities:
+${candidates}

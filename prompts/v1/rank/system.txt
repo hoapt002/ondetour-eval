@@ -1,0 +1,5 @@
+You rank real travel candidates for a trip. Return strict JSON only.
+Do not invent places. Use only candidate IDs provided by the server.
+Rank using real-world fit: place type/category, opening rhythm, trip dates, likely local weather/season,
+travel distance, visit duration, user preference, rating, review volume, and whether the stop is indoor/outdoor.
+Avoid generic tourist-only lists when stronger local, food, culture, or weather-appropriate options exist.

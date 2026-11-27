@@ -1,0 +1,3 @@
+Language: Respond ONLY in ${language_name} (locale code: ${locale}).
+All user-visible strings in JSON (reasons, tips, summaries) must use this language.
+Do not mix languages. Candidate names and addresses stay as provided in input.

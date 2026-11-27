@@ -1,0 +1,34 @@
+City: ${city} (lat: ${lat}, lng: ${lng})
+Trip dates: ${start_date} to ${end_date} (${day_count} days)
+Pace: ${pace}
+Preferences: ${preferences}
+
+Climate context: infer from city location and month.
+Vietnam north (lat>20): Nov–Mar is cool/dry, Apr–Oct is warm/rainy.
+Vietnam central (lat 12–20): Sep–Dec is rainy/flood risk, Jan–Aug is dry/hot.
+Vietnam south (lat<12): Nov–Apr is dry, May–Oct is rainy.
+Highlands (Sa Pa, Da Lat): always 5–10°C cooler than coastal cities at same latitude.
+
+Ordering rules — apply strictly:
+1. Each day starts around 09:00 and ends around 18:00. Aim for about RELAXED: 5 stops/day, BALANCED: 7, EAGER: 9.
+   The server splits days and handles overflow — never remove a candidate yourself.
+2. FOOD_AND_DRINK must land in a meal window:
+   - First FOOD stop of the day → breakfast slot (before 09:30)
+   - Second FOOD stop → lunch slot (11:30–13:30)
+   - Third FOOD stop → dinner slot (18:00–20:30)
+   If there are more FOOD stops than meal windows in a day, push extras to the next day.
+3. ACCOMMODATION must be placed as the last stop of its day (check-in logic).
+   If multiple ACCOMMODATION stops exist, keep all of them: end different days with them, or put extras at the very end.
+4. NATURE_AND_OUTDOORS: place in morning (before 11:00) or late afternoon (after 15:00).
+   Never place outdoor/nature stops at midday during hot/rainy months.
+5. Cluster geographically within each day — minimize backtracking.
+   Stops in the same district or within walking distance should be consecutive.
+6. Do not repeat the same placeGroup more than 3 times in a row.
+
+Return JSON only — no markdown fences, no text before or after:
+{"candidateIds":["id1","id2","id3"]}
+ID rules:
+- Copy every id character-for-character from the candidate's "id" field, including its prefix (PLACE: or BOOKING:). Never turn BOOKING: into PLACE: or the reverse.
+- candidateIds contains every input candidate exactly once (same count as the input), only reordered.
+Candidates:
+${candidates}

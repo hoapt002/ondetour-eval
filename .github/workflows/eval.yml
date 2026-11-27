@@ -1,0 +1,80 @@
+name: eval
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      model:
+        description: Anthropic model id
+        default: claude-haiku-5-5
+      prompt_version:
+        description: Prompt folder under prompts/
+        default: v1
+      repeats:
+        description: Calls per case (flakiness)
+        default: "1"
+
+concurrency:
+  group: eval-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync --locked
+      - run: uv run ruff check .
+      - run: uv run ruff format --check .
+      - run: uv run pytest -q
+
+  changes:
+    runs-on: ubuntu-latest
+    outputs:
+      eval: ${{ steps.filter.outputs.eval }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            eval:
+              - 'prompts/**'
+              - 'schemas/**'
+              - 'datasets/**'
+              - 'src/**'
+              - '.github/workflows/eval.yml'
+
+  eval:
+    needs: [test, changes]
+    if: github.event_name == 'workflow_dispatch' || needs.changes.outputs.eval == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      MODEL: ${{ inputs.model || 'claude-haiku-5-5' }}
+      PROMPT_VERSION: ${{ inputs.prompt_version || 'v1' }}
+      REPEATS: ${{ inputs.repeats || '1' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync --locked
+      - name: Require API key
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "::error::Add the ANTHROPIC_API_KEY repository secret to run the eval."
+            exit 1
+          fi
+      - name: Run eval (gate = 98% schema-valid)
+        run: >
+          uv run ondetour-eval run --provider anthropic --model "$MODEL"
+          --prompt-version "$PROMPT_VERSION" --repeats "$REPEATS" --concurrency 8
+          --label ci --github-summary "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: eval-${{ env.PROMPT_VERSION }}-${{ env.MODEL }}
+          path: runs/ci/

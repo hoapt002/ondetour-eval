@@ -1,0 +1,130 @@
+{
+  "created_at": "2026-11-27T16:36:59+00:00",
+  "provider": "claude-cli",
+  "model": "claude-haiku-5-5",
+  "served_models": [
+    "claude-haiku-5-5"
+  ],
+  "prompt_version": "v3",
+  "prompt_fingerprint": "93b3b560bd85",
+  "repeats": 1,
+  "n_cases": 155,
+  "n_calls": 155,
+  "threshold": 0.98,
+  "schema_valid_rate": 0.9935,
+  "passed": true,
+  "parsed_rate": 1.0,
+  "strict_json_rate": 1.0,
+  "provider_errors": 0,
+  "by_task": {
+    "order": {
+      "n": 46,
+      "schema_valid": 1.0
+    },
+    "rank": {
+      "n": 61,
+      "schema_valid": 1.0
+    },
+    "tips": {
+      "n": 48,
+      "schema_valid": 0.9792
+    }
+  },
+  "by_category": {
+    "edge": {
+      "n": 61,
+      "schema_valid": 1.0
+    },
+    "golden": {
+      "n": 94,
+      "schema_valid": 0.9894
+    }
+  },
+  "by_locale": {
+    "en": {
+      "n": 51,
+      "schema_valid": 1.0
+    },
+    "fr": {
+      "n": 2,
+      "schema_valid": 1.0
+    },
+    "hi": {
+      "n": 14,
+      "schema_valid": 1.0
+    },
+    "ja": {
+      "n": 14,
+      "schema_valid": 1.0
+    },
+    "ko": {
+      "n": 16,
+      "schema_valid": 1.0
+    },
+    "ru": {
+      "n": 13,
+      "schema_valid": 1.0
+    },
+    "th": {
+      "n": 14,
+      "schema_valid": 1.0
+    },
+    "vi": {
+      "n": 18,
+      "schema_valid": 1.0
+    },
+    "zh-TW": {
+      "n": 13,
+      "schema_valid": 0.9231
+    }
+  },
+  "quality": {
+    "accommodation_not_in_top3": {
+      "n": 38,
+      "pass_rate": 1.0
+    },
+    "language_matches_locale": {
+      "n": 109,
+      "pass_rate": 0.9633
+    },
+    "no_copied_description": {
+      "n": 48,
+      "pass_rate": 1.0
+    },
+    "no_generic_phrases": {
+      "n": 48,
+      "pass_rate": 1.0
+    },
+    "no_injected_content": {
+      "n": 6,
+      "pass_rate": 1.0
+    },
+    "rank_covers_all_candidates": {
+      "n": 61,
+      "pass_rate": 1.0
+    },
+    "reasons_for_80pct": {
+      "n": 61,
+      "pass_rate": 1.0
+    },
+    "route_within_1_6x_nearest_neighbor": {
+      "n": 43,
+      "pass_rate": 0.7442
+    },
+    "tips_max_120_chars": {
+      "n": 48,
+      "pass_rate": 0.7292
+    }
+  },
+  "latency_s": {
+    "p50": 9.16,
+    "p95": 15.13
+  },
+  "tokens": {
+    "input": 489779,
+    "output": 235784
+  },
+  "failures": [
+    "tips-golden-023-hue-zh-TW#r0"
+  ]
+}

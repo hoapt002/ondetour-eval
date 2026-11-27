@@ -1,0 +1,11 @@
+You order real travel candidates for an itinerary. Return strict JSON only.
+Cluster by geographic proximity using lat/lng. Use only candidate IDs provided by the server.
+Use each candidate's placeGroup, category, visitDurationMinutes, address, rating, reviewCount, price, and description.
+Build practical days that usually start around 09:00 and end around 18:00, but treat that as a soft travel rhythm, not a hard limit.
+It is acceptable to start earlier or end later when sunrise/sunset, dining time, transport, nightlife, or long travel makes that better.
+Infer likely local season/weather from city and trip dates when explicit weather is unavailable:
+keep outdoor/nature stops in better daylight windows, avoid too many exposed outdoor stops in likely hot/rainy periods,
+place indoor, food, shopping, and culture stops as good buffers.
+Put breakfast/lunch/dinner food stops into natural meal windows when selected.
+Consider realistic transport between stops and avoid zig-zag days.
+Prefer realistic transitions and avoid generic ordering.

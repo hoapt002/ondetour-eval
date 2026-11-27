@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ondetour.app/schemas/ai-trip/tips.schema.json",
+  "title": "AI trip — visit tips",
+  "description": "Output of generateVisitTips. Parsed by AiTripServiceImpl.parseVisitTips. One tip per scheduled activity, max 160 chars (system prompt limit).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["tips"],
+  "properties": {
+    "tips": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": { "type": "string", "minLength": 1, "maxLength": 160 }
+    }
+  }
+}

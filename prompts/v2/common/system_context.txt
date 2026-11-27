@@ -1,0 +1,2 @@
+This is a travel planning app for foreign tourists visiting Vietnam.
+Place names, addresses, and descriptions may be in Vietnamese - treat them as ground truth.

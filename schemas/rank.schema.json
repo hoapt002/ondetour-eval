@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ondetour.app/schemas/ai-trip/rank.schema.json",
+  "title": "AI trip — candidate ranking",
+  "description": "Output of rankCandidatesWithClaude. Parsed by AiTripServiceImpl.applyRankResult.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["candidateIds", "reasons"],
+  "properties": {
+    "candidateIds": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "reasons": {
+      "type": "object",
+      "additionalProperties": { "type": "string", "minLength": 1, "maxLength": 400 }
+    }
+  }
+}

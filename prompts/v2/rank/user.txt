@@ -1,0 +1,27 @@
+Trip city: ${city} (lat: ${lat}, lng: ${lng})
+Trip dates: ${start_date} to ${end_date} (${day_count} days)
+Pace: ${pace}
+User preferences: ${preferences}
+
+Climate context: infer from city location and month.
+Vietnam north (lat>20): Nov–Mar is cool/dry, Apr–Oct is warm/rainy.
+Vietnam central (lat 12–20): Sep–Dec is rainy/flood risk, Jan–Aug is dry/hot.
+Vietnam south (lat<12): Nov–Apr is dry, May–Oct is rainy.
+Highlands (Sa Pa, Da Lat): always 5–10°C cooler than coastal cities at same latitude.
+
+Ranking rules (apply in order):
+1. ACCOMMODATION: rank low — exclude from top positions, place near end.
+2. FOOD_AND_DRINK: prefer stops that fit a natural meal window (breakfast ~07:30, lunch ~12:00, dinner ~18:30).
+3. NATURE_AND_OUTDOORS: rank higher if trip month has good weather; rank lower during likely rainy/hot months.
+4. Prioritize higher rating + review count when other factors are equal.
+5. Prefer variety across placeGroups — avoid clustering 4+ stops of the same group consecutively.
+
+Return JSON only — no markdown fences, no text before or after:
+{"candidateIds":["id1","id2"],"reasons":{"id1":"concrete reason: place type + timing + weather fit","id2":"..."}}
+ID rules:
+- Copy every id character-for-character from the candidate's "id" field, including its prefix (PLACE: or BOOKING:). Never turn BOOKING: into PLACE: or the reverse.
+- List every candidate exactly once in candidateIds.
+- reasons has exactly one entry per id in candidateIds, in the same order, and every key is followed by ":" and a string.
+- Each reason is one sentence, max 160 characters.
+Candidates:
+${candidates}

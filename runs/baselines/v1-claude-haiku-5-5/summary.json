@@ -1,0 +1,148 @@
+{
+  "created_at": "2026-11-27T16:28:15+00:00",
+  "provider": "claude-cli",
+  "model": "claude-haiku-5-5",
+  "served_models": [
+    "claude-haiku-5-5"
+  ],
+  "prompt_version": "v1",
+  "prompt_fingerprint": "944db6e6fe30",
+  "repeats": 1,
+  "n_cases": 155,
+  "n_calls": 155,
+  "threshold": 0.98,
+  "schema_valid_rate": 0.8774,
+  "passed": false,
+  "parsed_rate": 0.9677,
+  "strict_json_rate": 0.9226,
+  "provider_errors": 0,
+  "by_task": {
+    "order": {
+      "n": 46,
+      "schema_valid": 0.8913
+    },
+    "rank": {
+      "n": 61,
+      "schema_valid": 0.7705
+    },
+    "tips": {
+      "n": 48,
+      "schema_valid": 1.0
+    }
+  },
+  "by_category": {
+    "edge": {
+      "n": 61,
+      "schema_valid": 0.9016
+    },
+    "golden": {
+      "n": 94,
+      "schema_valid": 0.8617
+    }
+  },
+  "by_locale": {
+    "en": {
+      "n": 51,
+      "schema_valid": 0.7843
+    },
+    "fr": {
+      "n": 2,
+      "schema_valid": 1.0
+    },
+    "hi": {
+      "n": 14,
+      "schema_valid": 1.0
+    },
+    "ja": {
+      "n": 14,
+      "schema_valid": 1.0
+    },
+    "ko": {
+      "n": 16,
+      "schema_valid": 0.8125
+    },
+    "ru": {
+      "n": 13,
+      "schema_valid": 0.7692
+    },
+    "th": {
+      "n": 14,
+      "schema_valid": 1.0
+    },
+    "vi": {
+      "n": 18,
+      "schema_valid": 0.8889
+    },
+    "zh-TW": {
+      "n": 13,
+      "schema_valid": 1.0
+    }
+  },
+  "quality": {
+    "accommodation_not_in_top3": {
+      "n": 34,
+      "pass_rate": 1.0
+    },
+    "language_matches_locale": {
+      "n": 104,
+      "pass_rate": 1.0
+    },
+    "no_copied_description": {
+      "n": 48,
+      "pass_rate": 1.0
+    },
+    "no_generic_phrases": {
+      "n": 48,
+      "pass_rate": 1.0
+    },
+    "no_injected_content": {
+      "n": 6,
+      "pass_rate": 1.0
+    },
+    "rank_covers_all_candidates": {
+      "n": 56,
+      "pass_rate": 1.0
+    },
+    "reasons_for_80pct": {
+      "n": 56,
+      "pass_rate": 1.0
+    },
+    "route_within_1_6x_nearest_neighbor": {
+      "n": 42,
+      "pass_rate": 0.7857
+    },
+    "tips_max_120_chars": {
+      "n": 48,
+      "pass_rate": 0.6875
+    }
+  },
+  "latency_s": {
+    "p50": 11.73,
+    "p95": 21.12
+  },
+  "tokens": {
+    "input": 570718,
+    "output": 391484
+  },
+  "failures": [
+    "rank-edge-sixty-candidates#r0",
+    "rank-edge-one-day-many-stops#r0",
+    "rank-edge-emoji-slang-preferences#r0",
+    "rank-edge-flood-season-outdoor-heavy#r0",
+    "order-edge-sixty-candidates#r0",
+    "order-edge-all-accommodation#r0",
+    "rank-golden-001-ha-en#r0",
+    "rank-golden-003-da-ru#r0",
+    "rank-golden-007-sa-ko#r0",
+    "rank-golden-011-ha-ru#r0",
+    "rank-golden-015-hue-ko#r0",
+    "rank-golden-017-sa-en#r0",
+    "rank-golden-020-ha-vi#r0",
+    "rank-golden-023-da-ko#r0",
+    "rank-golden-025-hue-en#r0",
+    "rank-golden-033-da-en#r0",
+    "order-golden-008-phu-ru#r0",
+    "order-golden-009-ha-vi#r0",
+    "order-golden-014-hue-en#r0"
+  ]
+}

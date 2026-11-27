@@ -1,0 +1,143 @@
+{
+  "_doc": "Real Vietnamese places used to build eval cases. Row = [name, placeGroup, category, lat, lng, rating, reviewCount, visitMinutes, address, description]. Coordinates are approximate (±200 m). A description of the form \"BOOKING:<english description>:<price VND>\" marks a bookable activity (sourceType BOOKING, priceCurrency VND); everything else is a PLACE.",
+  "cities": {
+    "Hà Nội": {
+      "lat": 21.0285, "lng": 105.8542,
+      "places": [
+        ["Hồ Hoàn Kiếm", "NATURE_AND_OUTDOORS", "lake", 21.0287, 105.8524, 4.7, 52310, 60, "Hàng Trống, Hoàn Kiếm, Hà Nội", "Hồ nước biểu tượng giữa phố cổ, có đền Ngọc Sơn và cầu Thê Húc."],
+        ["Văn Miếu - Quốc Tử Giám", "CULTURE_AND_HERITAGE", "temple", 21.0277, 105.8355, 4.6, 31842, 90, "58 Quốc Tử Giám, Đống Đa, Hà Nội", "Trường đại học đầu tiên của Việt Nam, xây năm 1070."],
+        ["Lăng Chủ tịch Hồ Chí Minh", "CULTURE_AND_HERITAGE", "monument", 21.0368, 105.8346, 4.6, 24190, 90, "2 Hùng Vương, Ba Đình, Hà Nội", "Lăng và quảng trường Ba Đình; đóng cửa chiều và thứ Hai."],
+        ["Phở Gia Truyền Bát Đàn", "FOOD_AND_DRINK", "pho", 21.0334, 105.8469, 4.3, 9120, 45, "49 Bát Đàn, Hoàn Kiếm, Hà Nội", "Phở bò nước trong, xếp hàng tự phục vụ từ 6h sáng."],
+        ["Bún Chả Hương Liên", "FOOD_AND_DRINK", "bun_cha", 21.0180, 105.8537, 4.2, 7840, 60, "24 Lê Văn Hưu, Hai Bà Trưng, Hà Nội", "Quán bún chả nổi tiếng, mở trưa và tối."],
+        ["Cà phê Giảng", "FOOD_AND_DRINK", "cafe", 21.0338, 105.8524, 4.4, 6530, 45, "39 Nguyễn Hữu Huân, Hoàn Kiếm, Hà Nội", "Cà phê trứng gốc từ năm 1946."],
+        ["Chợ Đồng Xuân", "SHOPPING_AND_MARKET", "market", 21.0381, 105.8494, 4.0, 15230, 90, "Đồng Xuân, Hoàn Kiếm, Hà Nội", "Chợ đầu mối lớn nhất phố cổ, bán sỉ vải vóc, đồ khô."],
+        ["Nhà tù Hỏa Lò", "CULTURE_AND_HERITAGE", "museum", 21.0253, 105.8466, 4.5, 18760, 75, "1 Hỏa Lò, Hoàn Kiếm, Hà Nội", "Di tích nhà tù thời Pháp, có tour đêm theo mùa."],
+        ["Bảo tàng Dân tộc học", "CULTURE_AND_HERITAGE", "museum", 21.0405, 105.7987, 4.7, 12410, 150, "Nguyễn Văn Huyên, Cầu Giấy, Hà Nội", "Trưng bày 54 dân tộc, có khu nhà truyền thống ngoài trời."],
+        ["Phố đường tàu Phùng Hưng", "ATTRACTIONS", "street", 21.0300, 105.8448, 4.1, 8950, 45, "Phùng Hưng, Hoàn Kiếm, Hà Nội", "Phố cà phê sát đường ray, tàu chạy qua vài lần mỗi ngày."],
+        ["Hanoi La Siesta Hotel & Spa", "ACCOMMODATION", "hotel", 21.0345, 105.8507, 4.8, 3820, 60, "94 Mã Mây, Hoàn Kiếm, Hà Nội", "Khách sạn boutique giữa phố cổ."],
+        ["Hanoi Street Food Tour by Night", "FOOD_AND_DRINK", "food_tour", 21.0330, 105.8500, 4.9, 2140, 210, "Phố cổ Hoàn Kiếm, Hà Nội", "BOOKING:Walking street food tour with local guide, 8 tastings.:650000"]
+      ]
+    },
+    "Thành phố Hồ Chí Minh": {
+      "lat": 10.7769, "lng": 106.7009,
+      "places": [
+        ["Chợ Bến Thành", "SHOPPING_AND_MARKET", "market", 10.7725, 106.6980, 4.0, 48210, 90, "Lê Lợi, Quận 1, TP.HCM", "Chợ biểu tượng Sài Gòn, khu ăn uống bên trong."],
+        ["Bảo tàng Chứng tích Chiến tranh", "CULTURE_AND_HERITAGE", "museum", 10.7795, 106.6921, 4.5, 39870, 120, "28 Võ Văn Tần, Quận 3, TP.HCM", "Bảo tàng về chiến tranh Việt Nam."],
+        ["Dinh Độc Lập", "CULTURE_AND_HERITAGE", "palace", 10.7770, 106.6953, 4.5, 33120, 90, "135 Nam Kỳ Khởi Nghĩa, Quận 1, TP.HCM", "Dinh thự lịch sử, nghỉ trưa 11:00–13:00."],
+        ["Nhà thờ Đức Bà", "CULTURE_AND_HERITAGE", "church", 10.7798, 106.6990, 4.5, 28740, 30, "01 Công xã Paris, Quận 1, TP.HCM", "Nhà thờ gạch đỏ thế kỷ 19, đang trùng tu."],
+        ["Bưu điện Trung tâm Sài Gòn", "CULTURE_AND_HERITAGE", "landmark", 10.7799, 106.7000, 4.5, 26430, 30, "2 Công xã Paris, Quận 1, TP.HCM", "Bưu điện kiến trúc Pháp do Gustave Eiffel thiết kế."],
+        ["Cơm Tấm Ba Ghiền", "FOOD_AND_DRINK", "com_tam", 10.7962, 106.6749, 4.2, 6380, 45, "84 Đặng Văn Ngữ, Phú Nhuận, TP.HCM", "Cơm tấm sườn nướng miếng to."],
+        ["Bánh Mì Huỳnh Hoa", "FOOD_AND_DRINK", "banh_mi", 10.7712, 106.6923, 4.3, 11200, 20, "26 Lê Thị Riêng, Quận 1, TP.HCM", "Bánh mì thập cẩm đầy pate, mở từ 14h."],
+        ["Phố đi bộ Nguyễn Huệ", "ATTRACTIONS", "promenade", 10.7740, 106.7038, 4.4, 21560, 60, "Nguyễn Huệ, Quận 1, TP.HCM", "Phố đi bộ đông vui về đêm."],
+        ["Landmark 81 SkyView", "ATTRACTIONS", "observation_deck", 10.7950, 106.7218, 4.4, 9870, 75, "720A Điện Biên Phủ, Bình Thạnh, TP.HCM", "Đài quan sát tầng 79–81."],
+        ["Hotel des Arts Saigon", "ACCOMMODATION", "hotel", 10.7820, 106.6965, 4.7, 2950, 60, "76-78 Nguyễn Thị Minh Khai, Quận 3, TP.HCM", "Khách sạn 5 sao, rooftop bar."],
+        ["Củ Chi Tunnels Half-Day Tour", "CULTURE_AND_HERITAGE", "day_tour", 11.1440, 106.4630, 4.6, 5120, 300, "Phú Hiệp, Củ Chi, TP.HCM", "BOOKING:Half-day tour to the Củ Chi tunnel network with hotel pickup.:890000"],
+        ["Chợ Bình Tây", "SHOPPING_AND_MARKET", "market", 10.7499, 106.6510, 4.1, 7650, 75, "57A Tháp Mười, Quận 6, TP.HCM", "Chợ Lớn của người Hoa, bán sỉ."]
+      ]
+    },
+    "Đà Nẵng": {
+      "lat": 16.0544, "lng": 108.2022,
+      "places": [
+        ["Bãi biển Mỹ Khê", "NATURE_AND_OUTDOORS", "beach", 16.0610, 108.2470, 4.6, 26410, 150, "Võ Nguyên Giáp, Sơn Trà, Đà Nẵng", "Bãi biển cát trắng dài, tắm biển tốt tháng 3–8."],
+        ["Ngũ Hành Sơn", "NATURE_AND_OUTDOORS", "mountain", 16.0039, 108.2633, 4.5, 21340, 150, "Huyền Trân Công Chúa, Ngũ Hành Sơn, Đà Nẵng", "Cụm núi đá vôi với hang động và chùa."],
+        ["Bán đảo Sơn Trà - Chùa Linh Ứng", "NATURE_AND_OUTDOORS", "peninsula", 16.1003, 108.2776, 4.7, 30120, 180, "Hoàng Sa, Sơn Trà, Đà Nẵng", "Tượng Quan Âm 67m, rừng có voọc chà vá."],
+        ["Cầu Rồng", "ATTRACTIONS", "bridge", 16.0612, 108.2270, 4.6, 24870, 45, "Nguyễn Văn Linh, Hải Châu, Đà Nẵng", "Rồng phun lửa và nước 21h tối thứ 7, CN."],
+        ["Bảo tàng Điêu khắc Chăm", "CULTURE_AND_HERITAGE", "museum", 16.0603, 108.2235, 4.5, 6230, 75, "02 2 Tháng 9, Hải Châu, Đà Nẵng", "Bộ sưu tập điêu khắc Chăm lớn nhất thế giới."],
+        ["Mì Quảng Bà Mua", "FOOD_AND_DRINK", "mi_quang", 16.0676, 108.2186, 4.2, 5410, 45, "19-21 Trần Bình Trọng, Hải Châu, Đà Nẵng", "Mì Quảng gà, tôm thịt."],
+        ["Chợ Hàn", "SHOPPING_AND_MARKET", "market", 16.0682, 108.2242, 4.1, 14320, 75, "119 Trần Phú, Hải Châu, Đà Nẵng", "Chợ đặc sản khô, vải may đồ nhanh."],
+        ["Bà Nà Hills - Cầu Vàng", "ATTRACTIONS", "theme_park", 15.9951, 107.9967, 4.5, 41230, 420, "Hòa Ninh, Hòa Vang, Đà Nẵng", "BOOKING:Cable car ticket to Bà Nà Hills and the Golden Bridge, buffet lunch.:1250000"],
+        ["Hải sản Bé Mặn", "FOOD_AND_DRINK", "seafood", 16.0634, 108.2460, 4.1, 8120, 90, "Lô 11 Võ Nguyên Giáp, Sơn Trà, Đà Nẵng", "Quán hải sản bình dân sát biển, chọn hải sản tươi tại bể."],
+        ["Furama Resort Danang", "ACCOMMODATION", "resort", 16.0398, 108.2502, 4.6, 7310, 60, "105 Võ Nguyên Giáp, Ngũ Hành Sơn, Đà Nẵng", "Resort 5 sao sát biển."]
+      ]
+    },
+    "Hội An": {
+      "lat": 15.8801, "lng": 108.3380,
+      "places": [
+        ["Chùa Cầu", "CULTURE_AND_HERITAGE", "bridge", 15.8771, 108.3262, 4.4, 19230, 30, "Nguyễn Thị Minh Khai, Minh An, Hội An", "Cầu gỗ Nhật Bản thế kỷ 17, cần vé tham quan phố cổ."],
+        ["Phố cổ Hội An", "CULTURE_AND_HERITAGE", "old_town", 15.8770, 108.3290, 4.7, 45610, 180, "Minh An, Hội An, Quảng Nam", "Đèn lồng thắp sáng tối, đẹp nhất ngày rằm."],
+        ["Bánh Mì Phượng", "FOOD_AND_DRINK", "banh_mi", 15.8797, 108.3307, 4.3, 14520, 20, "2B Phan Châu Trinh, Hội An", "Bánh mì nổi tiếng thế giới."],
+        ["Cao Lầu Thanh", "FOOD_AND_DRINK", "cao_lau", 15.8790, 108.3301, 4.4, 2340, 40, "26 Thái Phiên, Hội An", "Cao lầu sợi dày, thịt xá xíu."],
+        ["Rừng dừa Bảy Mẫu", "NATURE_AND_OUTDOORS", "river_tour", 15.8781, 108.3686, 4.3, 9870, 90, "Cẩm Thanh, Hội An", "Đi thúng chai trong rừng dừa nước."],
+        ["Bãi biển An Bàng", "NATURE_AND_OUTDOORS", "beach", 15.9149, 108.3404, 4.5, 11230, 150, "An Bàng, Cẩm An, Hội An", "Bãi biển yên tĩnh, quán ven biển."],
+        ["Chợ Hội An", "SHOPPING_AND_MARKET", "market", 15.8766, 108.3316, 4.1, 6720, 60, "Trần Phú, Minh An, Hội An", "Chợ trung tâm có khu ăn uống."],
+        ["Hội An Memories Show", "ATTRACTIONS", "show", 15.8735, 108.3215, 4.6, 3120, 90, "200 Nguyễn Tri Phương, Hội An", "BOOKING:Outdoor night show on Hội An history, 500 performers.:600000"],
+        ["Anantara Hoi An Resort", "ACCOMMODATION", "resort", 15.8779, 108.3361, 4.7, 2610, 60, "1 Phạm Hồng Thái, Hội An", "Resort ven sông Thu Bồn."]
+      ]
+    },
+    "Huế": {
+      "lat": 16.4637, "lng": 107.5909,
+      "places": [
+        ["Đại Nội Huế", "CULTURE_AND_HERITAGE", "citadel", 16.4698, 107.5786, 4.5, 27650, 180, "Thành Nội, Phú Hậu, Huế", "Hoàng thành triều Nguyễn, rất rộng, ít bóng mát."],
+        ["Lăng Khải Định", "CULTURE_AND_HERITAGE", "tomb", 16.3995, 107.5905, 4.6, 12340, 75, "Thủy Bằng, Hương Thủy, Huế", "Lăng kiến trúc Đông Tây kết hợp, nhiều bậc thang."],
+        ["Lăng Tự Đức", "CULTURE_AND_HERITAGE", "tomb", 16.4339, 107.5654, 4.5, 9870, 90, "Thủy Xuân, Huế", "Lăng có hồ sen và rừng thông."],
+        ["Chùa Thiên Mụ", "CULTURE_AND_HERITAGE", "pagoda", 16.4535, 107.5447, 4.6, 15120, 45, "Hương Long, Huế", "Chùa cổ bên sông Hương, tháp Phước Duyên 7 tầng."],
+        ["Bún bò Huế Mụ Rớt", "FOOD_AND_DRINK", "bun_bo", 16.4693, 107.5975, 4.3, 2180, 40, "37 Nguyễn Công Trứ, Huế", "Bún bò cay đậm vị Huế."],
+        ["Chợ Đông Ba", "SHOPPING_AND_MARKET", "market", 16.4728, 107.5880, 4.0, 8340, 75, "2 Trần Hưng Đạo, Huế", "Chợ lớn nhất Huế, có mè xửng, nón lá."],
+        ["Du thuyền sông Hương", "NATURE_AND_OUTDOORS", "boat", 16.4660, 107.5925, 4.2, 3410, 120, "Bến Tòa Khâm, Lê Lợi, Huế", "BOOKING:Dragon boat cruise with ca Huế folk music at night.:250000"],
+        ["Azerai La Residence Huế", "ACCOMMODATION", "hotel", 16.4626, 107.5843, 4.7, 2240, 60, "5 Lê Lợi, Huế", "Khách sạn art deco bên sông Hương."]
+      ]
+    },
+    "Đà Lạt": {
+      "lat": 11.9404, "lng": 108.4583,
+      "places": [
+        ["Hồ Xuân Hương", "NATURE_AND_OUTDOORS", "lake", 11.9418, 108.4447, 4.5, 21450, 60, "Phường 1, Đà Lạt", "Hồ trung tâm, đạp vịt và đi dạo sáng sớm có sương."],
+        ["Thiền viện Trúc Lâm", "CULTURE_AND_HERITAGE", "monastery", 11.9006, 108.4363, 4.6, 14230, 90, "Phường 3, Đà Lạt", "Thiền viện trên đồi nhìn hồ Tuyền Lâm, có cáp treo."],
+        ["Đồi chè Cầu Đất", "NATURE_AND_OUTDOORS", "tea_hill", 11.8302, 108.5582, 4.6, 8760, 120, "Xuân Trường, Đà Lạt", "Đồi chè trăm năm, săn mây lúc bình minh."],
+        ["Chợ đêm Đà Lạt", "SHOPPING_AND_MARKET", "night_market", 11.9426, 108.4374, 4.1, 18340, 90, "Nguyễn Thị Minh Khai, Phường 1, Đà Lạt", "Chợ đêm bán đồ len, đồ nướng, sữa đậu nành."],
+        ["Lẩu gà lá é Tao Ngộ", "FOOD_AND_DRINK", "hotpot", 11.9506, 108.4370, 4.3, 5670, 75, "5 Đường 3 Tháng 4, Đà Lạt", "Lẩu gà lá é đặc sản, hợp tối se lạnh."],
+        ["Bánh căn Nhà Chung", "FOOD_AND_DRINK", "banh_can", 11.9431, 108.4361, 4.2, 3890, 30, "1 Nhà Chung, Đà Lạt", "Bánh căn nóng chấm xíu mại, sáng và chiều."],
+        ["Ga Đà Lạt", "CULTURE_AND_HERITAGE", "station", 11.9420, 108.4554, 4.4, 9870, 45, "1 Quang Trung, Đà Lạt", "Ga xe lửa kiến trúc art deco cổ nhất Đông Dương."],
+        ["Canyoning Datanla", "NATURE_AND_OUTDOORS", "adventure", 11.9030, 108.4490, 4.8, 1840, 360, "Thác Datanla, Đà Lạt", "BOOKING:Full-day canyoning with abseiling down waterfalls, lunch included.:1350000"],
+        ["Dalat Palace Heritage Hotel", "ACCOMMODATION", "hotel", 11.9387, 108.4410, 4.6, 2760, 60, "2 Trần Phú, Đà Lạt", "Khách sạn Pháp cổ năm 1922."]
+      ]
+    },
+    "Sa Pa": {
+      "lat": 22.3364, "lng": 103.8438,
+      "places": [
+        ["Fansipan Legend", "NATURE_AND_OUTDOORS", "cable_car", 22.3355, 103.8340, 4.6, 24120, 300, "Nguyễn Chí Thanh, Sa Pa, Lào Cai", "BOOKING:Cable car to Fansipan summit 3143 m, round trip.:800000"],
+        ["Bản Cát Cát", "CULTURE_AND_HERITAGE", "village", 22.3290, 103.8290, 4.3, 18760, 150, "San Sả Hồ, Sa Pa", "Bản người H'Mông, đường dốc, trơn khi mưa."],
+        ["Thung lũng Mường Hoa", "NATURE_AND_OUTDOORS", "valley", 22.3080, 103.8710, 4.7, 6540, 240, "Hầu Thào, Sa Pa", "Ruộng bậc thang, đẹp nhất tháng 9 lúa chín."],
+        ["Nhà thờ Đá Sa Pa", "CULTURE_AND_HERITAGE", "church", 22.3358, 103.8434, 4.4, 9230, 30, "Thị trấn Sa Pa", "Nhà thờ đá Pháp xây 1895."],
+        ["Lẩu cá tầm Sa Pa", "FOOD_AND_DRINK", "hotpot", 22.3370, 103.8420, 4.2, 2140, 75, "Xuân Viên, Sa Pa", "Lẩu cá tầm nuôi suối lạnh."],
+        ["Chợ Sa Pa", "SHOPPING_AND_MARKET", "market", 22.3385, 103.8452, 4.0, 5420, 60, "Ngũ Chỉ Sơn, Sa Pa", "Chợ thổ cẩm, đồ khô vùng cao."],
+        ["Hotel de la Coupole", "ACCOMMODATION", "hotel", 22.3349, 103.8418, 4.7, 3410, 60, "1 Hoàng Liên, Sa Pa", "Khách sạn MGallery thiết kế Pháp - Đông Dương."]
+      ]
+    },
+    "Nha Trang": {
+      "lat": 12.2388, "lng": 109.1967,
+      "places": [
+        ["Tháp Bà Ponagar", "CULTURE_AND_HERITAGE", "temple", 12.2654, 109.1956, 4.5, 12340, 60, "2 Tháng 4, Vĩnh Phước, Nha Trang", "Tháp Chăm thế kỷ 8, cần che vai gối."],
+        ["Bãi biển Trần Phú", "NATURE_AND_OUTDOORS", "beach", 12.2440, 109.1960, 4.4, 19870, 150, "Trần Phú, Nha Trang", "Bãi biển trung tâm, nắng gắt trưa."],
+        ["Hòn Mun Snorkeling Tour", "NATURE_AND_OUTDOORS", "boat_tour", 12.1680, 109.2990, 4.5, 4120, 360, "Cảng Cầu Đá, Nha Trang", "BOOKING:Snorkeling trip to Hòn Mun marine park, lunch on boat.:750000"],
+        ["Tắm bùn I-Resort", "NATURE_AND_OUTDOORS", "spa", 12.2950, 109.1660, 4.4, 8760, 150, "Vĩnh Ngọc, Nha Trang", "Tắm bùn khoáng nóng."],
+        ["Bún chả cá Năm Beo", "FOOD_AND_DRINK", "bun_cha_ca", 12.2470, 109.1880, 4.3, 2870, 40, "Phan Bội Châu, Nha Trang", "Bún chả cá Nha Trang, sứa."],
+        ["Chợ Đầm", "SHOPPING_AND_MARKET", "market", 12.2550, 109.1920, 4.0, 7340, 75, "Phan Bội Châu, Xương Huân, Nha Trang", "Chợ hải sản khô, đặc sản."],
+        ["Sheraton Nha Trang", "ACCOMMODATION", "hotel", 12.2370, 109.1964, 4.6, 5120, 60, "26-28 Trần Phú, Nha Trang", "Khách sạn mặt biển, hồ bơi vô cực."]
+      ]
+    },
+    "Phú Quốc": {
+      "lat": 10.2899, "lng": 103.9840,
+      "places": [
+        ["Bãi Sao", "NATURE_AND_OUTDOORS", "beach", 10.0560, 104.0360, 4.5, 11230, 180, "An Thới, Phú Quốc", "Bãi cát trắng mịn, nước trong mùa khô."],
+        ["Cáp treo Hòn Thơm", "ATTRACTIONS", "cable_car", 10.0270, 104.0080, 4.6, 15670, 300, "An Thới, Phú Quốc", "BOOKING:Over-sea cable car to Hòn Thơm with water park access.:650000"],
+        ["Chợ đêm Phú Quốc", "SHOPPING_AND_MARKET", "night_market", 10.2172, 103.9601, 4.1, 21340, 90, "Bạch Đằng, Dương Đông, Phú Quốc", "Chợ đêm hải sản nướng, ngọc trai."],
+        ["Nhà thùng nước mắm Khải Hoàn", "CULTURE_AND_HERITAGE", "factory", 10.2210, 103.9620, 4.2, 2140, 45, "Hùng Vương, Dương Đông, Phú Quốc", "Tham quan nhà thùng ủ nước mắm truyền thống."],
+        ["Gỏi cá trích Xin Chào", "FOOD_AND_DRINK", "seafood", 10.2160, 103.9580, 4.3, 3120, 75, "66 Bạch Đằng, Dương Đông, Phú Quốc", "Gỏi cá trích, nhum nướng."],
+        ["Sunset Sanato Beach Club", "FOOD_AND_DRINK", "beach_club", 10.1640, 103.9690, 4.4, 6540, 120, "Bãi Trường, Phú Quốc", "Ngắm hoàng hôn, tượng nghệ thuật trên biển."],
+        ["JW Marriott Phu Quoc", "ACCOMMODATION", "resort", 10.0540, 104.0210, 4.8, 4870, 60, "Bãi Khem, An Thới, Phú Quốc", "Resort thiết kế đại học giả tưởng."]
+      ]
+    },
+    "Hạ Long": {
+      "lat": 20.9517, "lng": 107.0806,
+      "places": [
+        ["Vịnh Hạ Long Day Cruise", "NATURE_AND_OUTDOORS", "cruise", 20.9101, 107.1839, 4.6, 12450, 360, "Cảng Tuần Châu, Hạ Long", "BOOKING:6-hour cruise through Hạ Long Bay with kayaking at Luồn Cave.:1100000"],
+        ["Hang Sửng Sốt", "NATURE_AND_OUTDOORS", "cave", 20.8435, 107.0920, 4.6, 8760, 75, "Đảo Bồ Hòn, Vịnh Hạ Long", "Hang động lớn nhất vịnh."],
+        ["Bảo tàng Quảng Ninh", "CULTURE_AND_HERITAGE", "museum", 20.9512, 107.0915, 4.6, 6540, 90, "Trần Quốc Nghiễn, Hạ Long", "Bảo tàng kiến trúc gương đen, tránh mưa tốt."],
+        ["Sun World Hạ Long", "ATTRACTIONS", "theme_park", 20.9572, 107.0461, 4.3, 14320, 240, "Bãi Cháy, Hạ Long", "Cáp treo Nữ Hoàng, vòng quay Mặt Trời."],
+        ["Chả mực Hạ Long Bà Thành", "FOOD_AND_DRINK", "seafood", 20.9530, 107.0790, 4.2, 1980, 45, "Hồng Gai, Hạ Long", "Chả mực giã tay đặc sản."],
+        ["Chợ Hạ Long 1", "SHOPPING_AND_MARKET", "market", 20.9505, 107.0840, 4.0, 3120, 60, "Hồng Gai, Hạ Long", "Chợ hải sản tươi và khô."],
+        ["Novotel Ha Long Bay", "ACCOMMODATION", "hotel", 20.9545, 107.0480, 4.5, 4120, 60, "160 Hạ Long, Bãi Cháy", "Khách sạn nhìn ra vịnh."]
+      ]
+    }
+  }
+}
